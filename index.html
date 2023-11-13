@@ -1,47 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <!-- left side -->
+    <div class="flex-container">
+      <div class="result">
+        <h1 class="title-right">Your Result</h1>
+        <span class="dot"
+          ><h1 class="circle-fi">76</h1>
+          <h1 id="circle-se">of&nbsp;100</h1></span
+        >
+        <h1 class="title-tow">Great</h1>
+        <p class="para">
+          You scored higher than 65% of the people who have taken those tests.
+        </p>
+      </div>
+      <!-- right side -->
+      <div class="summary">
+        <h1 class="title-left">Summary</h1>
+        <div class="items">
+          <div class="first-line">
+            <img
+              id="img"
+              src="./assets/images/icon-reaction.svg"
+              alt="Reaction"
+              width="15"
+              height="20"
+            />
+            <h1 id="txt">Reaction</h1>
+            <h1 id="int-greydk">80</h1>
+            <h1 id="grey">/&nbsp;100</h1>
+          </div>
+          <div class="first-line">
+            <div class="first_part">
+              <img 
+              id="img"
+              src="./assets/images/icon-memory.svg"
+              alt="Reaction"
+              width="15"
+              height="20"
+            />
+            <h1 id="txt">Memory</h1>  
+            </div>
+            
+            <div class="second_part">
+              <h1 id="int-greydk">80</h1>
+            <h1 id="grey">/&nbsp;100</h1>
+            </div>
+          </div>
+          <div class="first-line">
+            <img
+              id="img"
+              src="./assets/images/icon-verbal.svg"
+              alt="Reaction"
+              width="15"
+              height="20"
+            />
+            <h1 id="txt">Verbal</h1>
+            <h1 id="int-greydk">80</h1>
+            <h1 id="grey">/&nbsp;100</h1>
+          </div>
+          <div class="first-line">
+            <img
+              id="img"
+              src="./assets/images/icon-visual.svg"
+              alt="Reaction"
+              width="15"
+              height="20"
+            />
+            <h1 id="txt">Visual</h1>
+            <h1 id="int-greydk">80</h1>
+            <h1 id="grey">/&nbsp;100</h1>
+          </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <button type="button">Continue</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
